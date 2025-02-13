@@ -1,0 +1,45 @@
+/* Set the body and html to full height */
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Create a flex container for the entire app */
+.app-container {
+  display: flex;
+  height: 100%; /* Full viewport height */
+}
+
+/* Sidebar styles */
+.sidebar {
+  width: 250px; /* Adjust based on your design */
+  background-color: #2c3e50;
+  color: white;
+  padding: 20px;
+  height: 100vh; /* Full viewport height */
+  position: fixed; /* Keep sidebar fixed */
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
+/* Content area styles */
+.content {
+  flex-grow: 1; /* Content area takes up the remaining space */
+  padding: 20px;
+  margin-left: 250px; /* Offset the content to the right, so it doesn't overlap with the sidebar */
+  background-color: #ecf0f1;
+  min-height: 100vh; /* Ensures that the content area takes at least the full height of the viewport */
+}
+
+/* For responsiveness, you can add media queries if needed */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 200px; /* Adjust for smaller screens */
+  }
+  .content {
+    margin-left: 200px; /* Adjust based on the sidebar width */
+  }
+}

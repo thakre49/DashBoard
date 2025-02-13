@@ -1,0 +1,28 @@
+<mat-sidenav-container class="sidenav-container">
+  <!-- Sidebar -->
+  <mat-sidenav #sidenav class="sidenav" mode="side" [opened]="isSidebarOpened">
+    <mat-nav-list>
+      <a mat-list-item routerLink="/dashboard" routerLinkActive="active"
+        >Dashboard</a
+      >
+      <a mat-list-item routerLink="/users" routerLinkActive="active">Users</a>
+      <a mat-list-item routerLink="/settings" routerLinkActive="active"
+        >Settings</a
+      >
+    </mat-nav-list>
+  </mat-sidenav>
+
+  <!-- Main content -->
+  <mat-sidenav-content>
+    <!-- Header -->
+    <mat-toolbar color="primary">
+      <button mat-icon-button (click)="sidenav.toggle()">
+        <mat-icon>menu</mat-icon>
+      </button>
+      <span>{{ title }}</span>
+    </mat-toolbar>
+
+    <!-- Routed content -->
+    <router-outlet></router-outlet>
+  </mat-sidenav-content>
+</mat-sidenav-container>

@@ -1,0 +1,33 @@
+.example-container {
+  height: 100vh;
+}
+
+mat-sidenav {
+  width: 250px;
+}
+
+mat-sidenav-content {
+  padding: 20px;
+}
+
+.dashboard-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.stat-cards {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+mat-card {
+  width: 200px;
+  text-align: center;
+  padding: 20px;
+}
+
+.sidenav {
+  height: 100vh;
+}

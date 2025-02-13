@@ -1,0 +1,10 @@
+mat-nav-list {
+  padding: 20px;
+  height: 100vh;
+}
+
+mat-list-item {
+  cursor: pointer;
+  font-size: 18px;
+  padding: 10px 0;
+}
